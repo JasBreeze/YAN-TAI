@@ -179,7 +179,7 @@ body {
   color: black;
   text-align: justify;
   font-family: "KaiTi", "楷体", serif;
-  align-self: center;
+  align-self: flex-start;
 }
 
 /* 六张小图展示区 */
