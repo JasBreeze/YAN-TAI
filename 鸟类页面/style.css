@@ -74,7 +74,7 @@ body {
 /* 搜索框区域 */
 .search-box {
   background-color: #543131;
-  height: 450px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,9 +99,9 @@ body {
 
 /* 小贴士区域 */
 .tips-box {
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: #d6de66;
-  height: 135px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -156,29 +156,30 @@ body {
 /* 顶部大图和文字介绍区 */
 .hero-section {
   background-color: white;
-  padding: 25px;
+  padding: 10px;
   display: flex;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #a8d8ea;
 }
 
 .hero-img {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   border: 1px solid #000;
+  margin-right: 10px;
 }
 
 .hero-text {
   flex: 1;
-  padding-left: 25px;
-  font-size: 16px;
-  line-height: 1.8;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: bold;
   color: black;
   text-align: justify;
   font-family: "KaiTi", "楷体", serif;
-  align-self: flex-start;
+  align-self: center;
 }
 
 /* 六张小图展示区 */
@@ -186,12 +187,12 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  gap: 15px;
+  gap: 20px;
 }
 
 .gallery-item {
   width: 15%;
-  height: 160px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -225,7 +226,7 @@ body {
 .footer-white-box {
   background-color: white;
   margin-left: -95px;
-  height: 170px;
+  height: 195px;
   width: 114%;
 }
 
