@@ -1,0 +1,202 @@
+/* 全局重置 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white; /* 底层为默认白色 */
+  font-family: "SimSun", "Songti SC", serif; /* 强制使用宋体/衬线体 */
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* 主容器 - 内容层 */
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  /* 为内容层添加背景渐变 - 左右方向，浅蓝色到偏紫粉色 */
+  background: linear-gradient(to right, #a8d8ea 0%, #e8b5e8 100%);
+}
+
+/* --- 左侧边栏 --- */
+.left-sidebar {
+  width: 80px; /* 较窄的左侧条 */
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 搜索框区域 */
+.search-box {
+  background-color: #543131; /* 深褐色 */
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  border-bottom: 5px solid #dcdcdc; /* 底部灰色装饰条 */
+}
+
+.search-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "KaiTi", "楷体", serif; /* 搜索二字看起来像楷体 */
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 60px;
+  height: 20px;
+  background-color: #fffacd;
+  border: none;
+}
+
+/* 小贴士区域 */
+.tips-box {
+  margin-top: 20px;
+  background-color: #543131; /* 深褐色 */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  writing-mode: vertical-lr; /* 竖排文字 */
+  letter-spacing: 5px;
+}
+
+/* --- 右侧主要区域 (包含导航和内容) --- */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 导航栏 */
+.nav-bar {
+  background-color: #543131; /* 深褐色 */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "SimSun", serif;
+  margin-right: 25px;
+}
+
+/* 内容区分栏 (中间 + 右侧图) */
+.content-area {
+  display: flex;
+}
+
+/* 中间核心内容 */
+.center-content {
+  flex: 1;
+  margin-right: 15px;
+}
+
+/* 顶部大图和文字介绍区 */
+.hero-section {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.hero-img {
+  width: 280px;
+  height: 180px;
+  background-color: #2b4e75; /* 占位色：海边的蓝色 */
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+.hero-text {
+  flex: 1;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: bold;
+  color: black;
+  text-align: justify;
+}
+
+/* 六张小图展示区 */
+.gallery-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.gallery-item {
+  width: 15%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.gallery-item img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+/* 模拟不同颜色的边框/背景 */
+.bg-yellow {
+  background-color: #e8e6ab;
+}
+.bg-purple {
+  background-color: #e8e6ab;
+}
+.bg-blue {
+  background-color: #e8e6ab;
+}
+
+/* 底部白色空白区 */
+.footer-white-box {
+  background-color: white;
+  height: 170px;
+  width: 100%;
+}
+
+/* --- 右侧边栏 (人物和鸟) --- */
+.right-sidebar {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-img-box {
+  background-color: #a8d8ea; /* 蓝色背景 */
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-img-box img {
+  width: 100%;
+  height: auto;
+  border: none; /* 移除图片边框，更加简约 */
+}
