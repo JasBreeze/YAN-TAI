@@ -33,7 +33,7 @@ body {
 /* 搜索框区域 */
 .search-box {
   background-color: #543131; /* 深褐色 */
-  height: 150px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,8 +58,8 @@ body {
 
 /* 小贴士区域 */
 .tips-box {
-  margin-top: 20px;
-  background-color: #543131; /* 深褐色 */
+  margin-top: 10px;
+  background-color: #d6de66;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -70,7 +70,7 @@ body {
   color: white;
   font-size: 20px;
   font-weight: bold;
-  writing-mode: vertical-lr; /* 竖排文字 */
+  writing-mode: vertical-lc; /* 横排文字 */
   letter-spacing: 5px;
 }
 
@@ -108,7 +108,7 @@ body {
 /* 中间核心内容 */
 .center-content {
   flex: 1;
-  margin-right: 15px;
+  margin-right: 30px;
 }
 
 /* 顶部大图和文字介绍区 */
@@ -136,6 +136,7 @@ body {
   font-weight: bold;
   color: black;
   text-align: justify;
+  font-family: "KaiTi", "楷体", serif; /* 改为楷体 */
 }
 
 /* 六张小图展示区 */
@@ -147,7 +148,7 @@ body {
 
 .gallery-item {
   width: 15%;
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,27 +157,37 @@ body {
 }
 
 .gallery-item img {
-  width: 90%;
-  height: 90%;
+  width: 85%;
+  height: 80%;
   object-fit: cover;
 }
 
 /* 模拟不同颜色的边框/背景 */
-.bg-yellow {
-  background-color: #e8e6ab;
+.gallery-item:nth-child(1) {
+  background-color: #dcd8b9;
 }
-.bg-purple {
-  background-color: #e8e6ab;
+.gallery-item:nth-child(2) {
+  background-color: #dcd8b9;
 }
-.bg-blue {
-  background-color: #e8e6ab;
+.gallery-item:nth-child(3) {
+  background-color: #d0a5f3;
+}
+.gallery-item:nth-child(4) {
+  background-color: #d0a5f3;
+}
+.gallery-item:nth-child(5) {
+  background-color: #b1c7e3;
+}
+.gallery-item:nth-child(6) {
+  background-color: #b1c7e3;
 }
 
 /* 底部白色空白区 */
 .footer-white-box {
   background-color: white;
-  height: 170px;
-  width: 100%;
+  margin-left: -95px;
+  height: 150px;
+  width: 113.5%;
 }
 
 /* --- 右侧边栏 (人物和鸟) --- */
@@ -188,8 +199,8 @@ body {
 }
 
 .sidebar-img-box {
-  background-color: #a8d8ea; /* 蓝色背景 */
-  padding: 5px;
+  background-color: #b1c7e3; /* 蓝色背景 */
+  padding: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,5 +209,4 @@ body {
 .sidebar-img-box img {
   width: 100%;
   height: auto;
-  border: none; /* 移除图片边框，更加简约 */
 }
