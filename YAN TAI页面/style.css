@@ -263,7 +263,7 @@ body {
   height: 500px;
   display: flex;
   align-items: flex-start;
-  padding: 60px 20px;
+  padding: 60px 0;
   background-color: #2d5016; /* 背景色，当图片未加载时显示 */
   color: white;
   text-align: left;
@@ -273,7 +273,9 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
-  text-align: left; /* 内容容器左对齐 */
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .new-hero-title {
