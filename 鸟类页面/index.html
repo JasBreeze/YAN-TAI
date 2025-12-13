@@ -6,92 +6,91 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- 左侧：搜索和小贴士 -->
-      <div class="left-sidebar">
-        <div class="search-box">
-          <div class="search-title">搜索</div>
-          <input type="text" class="search-input" />
-        </div>
-
-        <div class="tips-box">
-          <div class="tips-text">小贴士</div>
-        </div>
-      </div>
-
-      <!-- 右侧大容器 -->
-      <div class="main-wrapper">
-        <!-- 导航栏 -->
-        <div class="nav-bar">
-          <a href="#">首页</a>
-          <a href="#">资讯</a>
-          <a href="#">文献</a>
-          <a href="#">分类</a>
-          <a href="#">社交专区</a>
-        </div>
-
-        <!-- 内容区域 -->
-        <div class="content-area">
-          <!-- 中间内容 -->
-          <div class="center-content">
-            <!-- 介绍部分 -->
-            <div class="hero-section">
-              <!-- 请替换 src 为海边飞鸟图 -->
-              <img src="image/海边飞鸟.jpg" class="hero-img" alt="海边飞鸟" />
-              <div class="hero-text">
-                鸟类是自然生态系统的重要组成部分，对维护生态系统平衡和稳定发挥着十分重要的作用。目前，我国有鸟类1445种，约占世界鸟类种数的六分之一，是世界上鸟类种数最多的国家之一，其中有92种鸟类列入国家一级保护动物。
-              </div>
-            </div>
-
-            <!-- 图片画廊 (6张) -->
-            <div class="gallery-row">
-              <!-- 1. 黄色底，鸭子 -->
-              <div class="gallery-item bg-yellow">
-                <img src="image/鸭子.jpg" alt="鸭子" />
-              </div>
-              <!-- 2. 黄色底，大白鹅 -->
-              <div class="gallery-item bg-yellow">
-                <img src="image/鹅.jpg" alt="鹅" />
-              </div>
-              <!-- 3. 紫色底，猛禽 -->
-              <div class="gallery-item bg-purple">
-                <img src="image/猛禽.jpg" alt="猛禽" />
-              </div>
-              <!-- 4. 紫色底，公鸡 -->
-              <div class="gallery-item bg-purple">
-                <img src="image/公鸡.jpg" alt="公鸡" />
-              </div>
-              <!-- 5. 蓝色底，黑鸟 -->
-              <div class="gallery-item bg-blue">
-                <img src="image/黑鸟.jpg" alt="黑鸟" />
-              </div>
-              <!-- 6. 蓝色底，笼中鸟 -->
-              <div class="gallery-item bg-blue">
-                <img src="image/笼中鸟.jpg" alt="笼中鸟" />
-              </div>
-            </div>
-
-            <!-- 底部白色区域 -->
-            <div class="footer-white-box"></div>
+    <!-- 顶部蓝条 -->
+    <div class="top-blue-bar"></div>
+    
+    <!-- 渐变背景容器 -->
+    <div class="gradient-container">
+      <div class="container">
+        <!-- 左侧边栏 -->
+        <div class="left-sidebar">
+          <div class="search-box">
+            <div class="search-title">搜索</div>
+            <input type="text" class="search-input" />
           </div>
 
-          <!-- 右侧边栏图片 -->
-          <div class="right-sidebar">
-            <!-- 老人图 -->
-            <div class="sidebar-img-box">
-              <img src="image/老人.jpg" alt="老人" />
+          <div class="tips-box">
+            <div class="tips-text">小贴士</div>
+          </div>
+        </div>
+
+        <!-- 右侧主内容区 -->
+        <div class="main-wrapper">
+          <!-- 导航栏 -->
+          <div class="nav-bar">
+            <a href="#">首页</a>
+            <a href="#">资讯</a>
+            <a href="#">文献</a>
+            <a href="#">分类</a>
+            <a href="#">社交专区</a>
+          </div>
+
+          <!-- 内容区域 -->
+          <div class="content-area">
+            <!-- 中间内容 -->
+            <div class="center-content">
+              <!-- 英雄区 -->
+              <div class="hero-section">
+                <img src="image/海边飞鸟.jpg" class="hero-img" alt="海边飞鸟" />
+                <div class="hero-text">
+                  鸟类是自然生态系统的重要组成部分，对维护生态系统平衡和稳定发挥着十分重要的作用。目前，我国有鸟类1445种，约占世界鸟类种数的六分之一，是世界上鸟类种数最多的国家之一，其中有92种鸟类列入国家一级保护动物。
+                </div>
+              </div>
+
+              <!-- 图片画廊 -->
+              <div class="gallery-row">
+                <div class="gallery-item">
+                  <img src="image/鸭子.jpg" alt="鸭子" />
+                </div>
+                <div class="gallery-item">
+                  <img src="image/鹅.jpg" alt="鹅" />
+                </div>
+                <div class="gallery-item">
+                  <img src="image/猛禽.jpg" alt="猛禽" />
+                </div>
+                <div class="gallery-item">
+                  <img src="image/公鸡.jpg" alt="公鸡" />
+                </div>
+                <div class="gallery-item">
+                  <img src="image/黑鸟.jpg" alt="黑鸟" />
+                </div>
+                <div class="gallery-item">
+                  <img src="image/笼中鸟.jpg" alt="笼中鸟" />
+                </div>
+              </div>
+
+              <!-- 底部空白区 -->
+              <div class="footer-white-box"></div>
             </div>
-            <!-- 黑鹳图 1 -->
-            <div class="sidebar-img-box">
-              <img src="image/黑鹳.png" alt="黑鹳" />
-            </div>
-            <!-- 黑鹳图 2 -->
-            <div class="sidebar-img-box">
-              <img src="image/黑鹳.png" alt="黑鹳" />
+
+            <!-- 右侧边栏图片 -->
+            <div class="right-sidebar">
+              <div class="sidebar-img-box">
+                <img src="image/老人.jpg" alt="老人" />
+              </div>
+              <div class="sidebar-img-box">
+                <img src="image/黑鹳.png" alt="黑鹳" />
+              </div>
+              <div class="sidebar-img-box">
+                <img src="image/黑鹳.png" alt="黑鹳" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
+    <!-- 底部红条 -->
+    <div class="bottom-red-bar"></div>
   </body>
 </html>
