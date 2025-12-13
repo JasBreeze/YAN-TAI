@@ -78,7 +78,7 @@ body {
   position: absolute; /* 绝对定位 */
   bottom: 10px; /* 距离底部：10px */
   left: 10px; /* 距离左侧：10px */
-  color: #000; /* 文字颜色：黑色 */
+  color: white; /* 文字颜色：白色 */
   text-align: left; /* 文字对齐：左对齐 */
 }
 
@@ -86,6 +86,7 @@ body {
 .location {
   font-size: 14px; /* 字体大小：14px */
   margin-bottom: 5px; /* 底部外边距：5px */
+  color: white; /* 文字颜色：白色 */
 }
 
 /* 标题文字样式 */
@@ -93,6 +94,7 @@ body {
   font-size: 18px; /* 字体大小：18px */
   font-weight: bold; /* 字体粗细：加粗 */
   line-height: 1.3; /* 行高：1.3倍 */
+  color: white; /* 文字颜色：白色 */
 }
 
 /* 右侧：烟台冬季本土植物抗寒观察 */
@@ -353,7 +355,7 @@ body {
 
   .new-hero {
     height: 400px;
-    padding: 0 15px;
+    padding: 60px 0;
   }
 
   .new-hero-content {
@@ -367,12 +369,24 @@ body {
   .new-hero-subtitle {
     font-size: 16px;
   }
+  
+  /* 调整主内容区域为单列布局 */
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  /* 调整植物卡片为两行布局 */
+  .plant-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 @media (max-width: 576px) {
   .new-hero {
     height: auto;
-    padding: 50px 10px;
+    padding: 50px 0;
   }
 
   .new-hero-content {
@@ -389,6 +403,30 @@ body {
 
   .new-hero-text {
     font-size: 12px;
-    padding: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* 调整植物卡片为单列布局 */
+  .plant-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* 调整导航栏为垂直排列 */
+  .new-nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* 调整主卡片高度 */
+  .main-card {
+    min-height: 300px;
+  }
+  
+  /* 调整卡片背景高度 */
+  .card-bg {
+    height: 300px;
   }
 }
