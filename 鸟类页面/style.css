@@ -174,7 +174,7 @@ body {
   flex: 1;
   padding: 0 10px;
   padding-top: 0;
-  font-size: 20px;   /* 调整字体大小 */
+  font-size: 18px;   /* 调整字体大小 */
   line-height: 1.8;  /* 调整行高 */
   font-weight: bold;
   color: black;
@@ -254,4 +254,5 @@ body {
   max-height: 200px;
   object-fit: cover;
 }
+
 
