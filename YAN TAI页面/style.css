@@ -369,13 +369,13 @@ body {
   .new-hero-subtitle {
     font-size: 16px;
   }
-  
+
   /* 调整主内容区域为单列布局 */
   .main-content {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   /* 调整植物卡片为两行布局 */
   .plant-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -406,25 +406,25 @@ body {
     padding: 0;
     margin: 0;
   }
-  
+
   /* 调整植物卡片为单列布局 */
   .plant-cards {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   /* 调整导航栏为垂直排列 */
   .new-nav-menu {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
-  
+
   /* 调整主卡片高度 */
   .main-card {
     min-height: 300px;
   }
-  
+
   /* 调整卡片背景高度 */
   .card-bg {
     height: 300px;
