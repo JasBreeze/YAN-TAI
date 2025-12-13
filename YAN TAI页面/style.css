@@ -1,0 +1,392 @@
+/* 全局样式 */
+* {
+  margin: 0; /* 清除默认外边距 */
+  padding: 0; /* 清除默认内边距 */
+  box-sizing: border-box; /* 设置盒模型为border-box */
+}
+
+/* 页面基础样式 */
+body {
+  background-color: white; /* 页面背景色：白色 */
+  font-family: Arial, sans-serif; /* 字体：Arial */
+  color: black; /* 文字颜色：黑色 */
+  line-height: 1.6; /* 行高：1.6倍 */
+}
+
+/* 顶部通栏样式 */
+.top-bar {
+  width: 100%; /* 宽度：100% */
+  height: 20px; /* 减小高度，与设计图匹配 */
+  background-color: transparent; /* 透明背景，与设计图匹配 */
+  margin-bottom: 30px; /* 减小底部外边距，与设计图匹配 */
+}
+
+/* 容器样式 */
+.container {
+  max-width: 1400px; /* 最大宽度：1400px（整体调宽） */
+  margin: 0 auto; /* 水平居中 */
+  padding: 0 20px; /* 左右内边距：20px（减小内边距，增加可用宽度） */
+}
+
+/* 主内容区域布局 */
+.main-content {
+  display: grid; /* 使用Grid布局 */
+  grid-template-columns: 4fr 5fr; /* 左右分栏比例：4:5（左侧拓宽，减小差距） */
+  gap: 80px; /* 栏间距：80px（增加间距，适应更宽的布局） */
+  align-items: stretch; /* 对齐方式：拉伸对齐（底部对齐） */
+}
+
+/* 左侧：今日推荐 */
+.left-section {
+  display: flex; /* 使用Flex布局 */
+  flex-direction: column; /* 垂直排列 */
+  gap: 20px; /* 减小元素间距 */
+  height: 100%; /* 高度：100%（填满父容器） */
+}
+
+/* 左侧标题样式 */
+.section-title {
+  width: auto; /* 宽度：自适应内容，与设计图匹配 */
+  height: auto; /* 高度：自适应内容 */
+  background-color: #666; /* 背景色：灰色 */
+  color: white; /* 文字颜色：白色 */
+  font-size: 18px; /* 字体大小：18px */
+  font-weight: bold; /* 字体粗细：加粗 */
+  display: inline-block; /* 行内块级元素 */
+  align-items: center;
+  padding: 8px 20px; /* 内边距：上下8px，左右20px */
+  margin-bottom: 20px; /* 底部外边距：20px */
+}
+
+/* 主卡片样式 */
+.main-card {
+  position: relative; /* 相对定位 */
+  width: 100%; /* 宽度：100%（自适应左侧列宽度） */
+  flex: 1; /* 弹性伸缩：占据剩余空间 */
+  min-height: 400px; /* 减小最小高度 */
+}
+
+/* 主卡片背景样式 */
+.card-bg {
+  width: 100%; /* 宽度：100% */
+  height: 100%; /* 高度：100% */
+  background-color: #d3d3d3; /* 背景色：浅灰色 */
+}
+
+/* 主卡片文字样式 */
+.card-text {
+  position: absolute; /* 绝对定位 */
+  bottom: 10px; /* 距离底部：10px */
+  left: 10px; /* 距离左侧：10px */
+  color: #000; /* 文字颜色：黑色 */
+  text-align: left; /* 文字对齐：左对齐 */
+}
+
+/* 位置文字样式 */
+.location {
+  font-size: 14px; /* 字体大小：14px */
+  margin-bottom: 5px; /* 底部外边距：5px */
+}
+
+/* 标题文字样式 */
+.title {
+  font-size: 18px; /* 字体大小：18px */
+  font-weight: bold; /* 字体粗细：加粗 */
+  line-height: 1.3; /* 行高：1.3倍 */
+}
+
+/* 右侧：烟台冬季本土植物抗寒观察 */
+.right-section {
+  display: flex; /* 使用Flex布局 */
+  flex-direction: column; /* 垂直排列 */
+  gap: 20px; /* 减小元素间距 */
+  margin-top: 80px; /* 添加顶部外边距，使区域整体下移 */
+  padding-top: 0; /* 顶部内边距：0 */
+}
+
+/* 右侧标题组样式 */
+.right-title-group {
+  display: flex; /* 使用Flex布局 */
+  flex-direction: column; /* 垂直排列 */
+  gap: 10px; /* 减小标题间距 */
+}
+
+/* 右侧主标题、关键词、副标题公共样式 */
+.right-title {
+  background-color: transparent; /* 透明背景 */
+  color: #000; /* 黑色文字 */
+  font-weight: bold; /* 字体粗细：加粗 */
+  text-align: left; /* 文字对齐：左对齐 */
+  display: block; /* 块级元素 */
+  width: fit-content; /* 宽度：适应内容长度 */
+  padding: 0; /* 移除内边距 */
+  font-size: 20px; /* 字体大小：20px */
+}
+
+.right-keyword,
+.right-subtitle {
+  background-color: #666; /* 背景色：灰色 */
+  color: white; /* 文字颜色：白色 */
+  font-weight: normal; /* 字体粗细：正常 */
+  text-align: left; /* 文字对齐：左对齐 */
+  display: inline-block; /* 显示方式：行内块级元素，宽度自适应内容 */
+  width: fit-content; /* 宽度：适应内容长度 */
+  padding: 8px 15px; /* 内边距：上下8px，左右15px */
+}
+
+/* 右侧关键词样式 */
+.right-keyword {
+  font-size: 14px; /* 字体大小：14px */
+  font-weight: normal; /* 字体粗细：正常 */
+  text-transform: uppercase; /* 文字转换：大写 */
+  background-color: #666; /* 背景色：灰色 */
+  margin-bottom: 5px; /* 底部外边距：5px */
+}
+
+/* 右侧副标题样式 */
+.right-subtitle {
+  font-size: 16px; /* 字体大小：16px */
+  font-weight: normal; /* 字体粗细：正常 */
+  background-color: #888; /* 背景色：中灰色 */
+  font-style: normal; /* 字体样式：正常（无斜体） */
+}
+
+/* 植物卡片容器样式 */
+.plant-cards {
+  display: grid; /* 使用Grid布局 */
+  grid-template-columns: repeat(3, 1fr); /* 三列等宽布局 */
+  gap: 20px; /* 减小卡片间距 */
+  margin-top: 20px; /* 顶部外边距：20px */
+}
+
+/* 单个植物卡片样式 */
+.plant-card {
+  display: flex; /* 使用Flex布局 */
+  flex-direction: column; /* 垂直排列 */
+  gap: 10px; /* 元素间距：10px */
+}
+
+/* 植物卡片背景样式 */
+.plant-bg {
+  width: 100%; /* 宽度：100% */
+  height: 900px; /* 减小高度 */
+  background-color: #d3d3d3; /* 背景色：浅灰色 */
+  overflow: hidden;
+}
+
+/* 植物信息容器样式 */
+.plant-info {
+  display: flex; /* 使用Flex布局 */
+  flex-direction: column; /* 垂直排列 */
+  gap: 5px; /* 减小信息项间距 */
+}
+
+/* 植物名称样式 */
+.plant-name {
+  background-color: #666; /* 背景色：灰色 */
+  color: white; /* 文字颜色：白色 */
+  padding: 8px 15px; /* 内边距：上下8px，左右15px */
+  font-size: 14px; /* 字体大小：14px */
+  font-weight: bold; /* 字体粗细：加粗 */
+  text-align: left; /* 文字对齐：左对齐 */
+  display: inline-block; /* 显示方式：行内块级元素，宽度自适应内容 */
+  width: fit-content; /* 宽度：适应内容长度 */
+  margin: 0; /* 外边距：0 */
+}
+
+/* 植物类型样式 */
+.plant-type {
+  background-color: #888; /* 背景色：中灰色 */
+  color: white; /* 文字颜色：白色 */
+  font-weight: normal; /* 字体粗细：正常 */
+  font-size: 12px; /* 字体大小：12px */
+  text-align: left; /* 文字对齐：左对齐 */
+  display: inline-block; /* 显示方式：行内块级元素，宽度自适应内容 */
+  width: fit-content; /* 宽度：适应内容长度 */
+  margin: 0; /* 外边距：0 */
+  padding: 8px 15px; /* 内边距：上下8px，左右15px */
+}
+
+/* 新增导航栏样式 */
+.new-navbar {
+  background-color: #e6f0da; /* 浅绿色背景，与设计图匹配 */
+  padding: 15px 0;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.new-navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000; /* 黑色文字，与设计图匹配 */
+  letter-spacing: 2px;
+}
+
+.new-nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 50px; /* 增加间距，与设计图匹配 */
+  margin: 0;
+  padding: 0;
+}
+
+.new-nav-item {
+  margin: 0;
+}
+
+.new-nav-link {
+  color: #000; /* 黑色文字，与设计图匹配 */
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.new-nav-link:hover {
+  color: #ffcc00;
+}
+
+.new-hero {
+  position: relative;
+  background-image: url("./image/1.jpg"); /* 使用1.jpg作为背景 */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: #2d5016; /* 背景色，当图片未加载时显示 */
+  color: white;
+  text-align: left;
+}
+
+.new-hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left; /* 内容容器左对齐 */
+}
+
+.new-hero-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left; /* 标题左对齐 */
+}
+
+.new-hero-subtitle {
+  font-size: 18px;
+  color: white; /* 白色文字，与设计图匹配 */
+  margin-bottom: 30px;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: left; /* 副标题左对齐 */
+}
+
+.new-hero-text {
+  font-size: 14px;
+  max-width: 450px;
+  line-height: 1.8;
+  background-color: transparent; /* 移除红色背景，与设计图匹配 */
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: left; /* 描述文本左对齐 */
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .new-hero-content {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .new-nav-menu {
+    gap: 30px;
+  }
+
+  .new-nav-link {
+    font-size: 14px;
+  }
+
+  .new-hero {
+    height: 450px;
+  }
+
+  .new-hero-title {
+    font-size: 30px;
+  }
+
+  .new-hero-subtitle {
+    font-size: 18px;
+  }
+
+  .new-hero-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-navbar-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .new-nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .new-hero {
+    height: 400px;
+    padding: 0 15px;
+  }
+
+  .new-hero-content {
+    padding: 0 15px;
+  }
+
+  .new-hero-title {
+    font-size: 24px;
+  }
+
+  .new-hero-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .new-hero {
+    height: auto;
+    padding: 50px 10px;
+  }
+
+  .new-hero-content {
+    padding: 0 10px;
+  }
+
+  .new-hero-title {
+    font-size: 20px;
+  }
+
+  .new-hero-subtitle {
+    font-size: 14px;
+  }
+
+  .new-hero-text {
+    font-size: 12px;
+    padding: 15px;
+  }
+}

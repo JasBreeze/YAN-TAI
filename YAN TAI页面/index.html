@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- HTML文档声明 -->
+<html lang="zh-CN">
+  <!-- 根元素，语言：中文 -->
+  <head>
+    <!-- 头部信息 -->
+    <meta charset="UTF-8" />
+    <!-- 字符集：UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 视口设置，响应式设计 -->
+    <title>今日推荐</title>
+    <!-- 页面标题 -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- 引入CSS样式文件 -->
+  </head>
+  <body>
+    <!-- 新增导航栏 -->
+    <nav class="new-navbar">
+      <div class="new-navbar-container">
+        <div class="new-logo">YAN TAI</div>
+        <ul class="new-nav-menu">
+          <li class="new-nav-item"><a href="#" class="new-nav-link">首页</a></li>
+          <li class="new-nav-item"><a href="#" class="new-nav-link">抗寒本土植物图鉴</a></li>
+          <li class="new-nav-item"><a href="#" class="new-nav-link">抗寒机制</a></li>
+          <li class="new-nav-item"><a href="#" class="new-nav-link">实地观察指南</a></li>
+          <li class="new-nav-item"><a href="#" class="new-nav-link">气候关联</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 新增英雄区域 -->
+    <section class="new-hero">
+      <div class="new-hero-content">
+        <h1 class="new-hero-title">烟台冬季本土植物抗寒观察</h1>
+        <h2 class="new-hero-subtitle">A Study on Cold Resistance Observation of Native Plants in Yantai During Winter</h2>
+        <p class="new-hero-text">Yantai, located in the northern coastal area of Shandong Province, has a temperate monsoon climate with cold and dry winters. Its native plants have evolved strong cold resistance after long-term adaptation. Therefore, the cold resistance observation focuses on their growth status and survival rate under low temperature conditions.</p>
+      </div>
+    </section>
+
+    <!-- 页面主体 -->
+    <div class="top-bar"></div>
+    <!-- 顶部通栏 -->
+    <div class="container">
+      <!-- 主容器 -->
+      <div class="main-content">
+        <!-- 主内容区域 -->
+        <!-- 左侧：今日推荐板块 -->
+        <div class="left-section">
+          <!-- 左侧区域容器 -->
+          <div class="section-title">今日推荐</div>
+          <!-- 左侧标题 -->
+          <div class="main-card">
+            <!-- 主卡片容器 -->
+            <div class="card-bg">
+              <!-- 插入2.jpg图片 -->
+              <img src="./image/2.jpg" alt="烟台百年冬青长廊" width="100%" height="100%" style="object-fit: cover;">
+            </div>
+            <!-- 卡片背景 -->
+            <div class="card-text">
+              <!-- 卡片文字区域 -->
+              <div class="location">烟台</div>
+              <!-- 地点文字 -->
+              <div class="title">百年冬青长廊</div>
+              <!-- 景点标题 -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧：烟台冬季本土植物抗寒观察板块 -->
+        <div class="right-section">
+          <!-- 右侧区域容器 -->
+          <div class="right-title-group">
+            <!-- 右侧标题组容器 -->
+            <!-- 移除右侧主标题，与设计图匹配 -->
+            <div class="right-keyword">Cold Resistance</div>
+            <!-- 右侧关键词 -->
+            <div class="right-subtitle">
+              Observation of Yantai's Native Winter Plants
+            </div>
+            <!-- 右侧副标题 -->
+          </div>
+          <div class="plant-cards">
+            <!-- 植物卡片容器 -->
+            <!-- 水杉卡片 -->
+            <div class="plant-card">
+              <!-- 单个植物卡片 -->
+              <div class="plant-bg">
+                <!-- 插入3.jpg图片 -->
+                <img src="./image/3.jpg" alt="水杉" width="100%" height="100%" style="object-fit: cover;">
+              </div>
+              <!-- 植物卡片背景 -->
+              <div class="plant-info">
+                <!-- 植物信息容器 -->
+                <div class="plant-name">水杉</div>
+                <!-- 植物名称 -->
+                <div class="plant-type">落叶休眠类</div>
+                <!-- 植物类型 -->
+              </div>
+            </div>
+            <!-- 云杉卡片 -->
+            <div class="plant-card">
+              <!-- 单个植物卡片 -->
+              <div class="plant-bg">
+                <!-- 插入4.jpg图片 -->
+                <img src="./image/4.jpg" alt="云杉" width="100%" height="100%" style="object-fit: cover;">
+              </div>
+              <!-- 植物卡片背景 -->
+              <div class="plant-info">
+                <!-- 植物信息容器 -->
+                <div class="plant-name">云杉</div>
+                <!-- 植物名称 -->
+                <div class="plant-type">常绿针叶类</div>
+                <!-- 植物类型 -->
+              </div>
+            </div>
+            <!-- 黑松卡片 -->
+            <div class="plant-card">
+              <!-- 单个植物卡片 -->
+              <div class="plant-bg">
+                <!-- 插入5.jpg图片 -->
+                <img src="./image/5.jpg" alt="黑松" width="100%" height="100%" style="object-fit: cover;">
+              </div>
+              <!-- 植物卡片背景 -->
+              <div class="plant-info">
+                <!-- 植物信息容器 -->
+                <div class="plant-name">黑松</div>
+                <!-- 植物名称 -->
+                <div class="plant-type">常绿针叶类</div>
+                <!-- 植物类型 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
