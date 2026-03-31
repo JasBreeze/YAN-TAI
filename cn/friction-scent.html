@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摩擦生香专利</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f8f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #2c5530;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        body.loaded {
+            opacity: 1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+
+        .title-section {
+            margin-bottom: 60px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: normal;
+            margin-bottom: 10px;
+            color: #2c5530;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #5a8c62;
+            line-height: 1.5;
+        }
+
+        .interaction-area {
+            width: 300px;
+            height: 400px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1.5s ease-out 0.3s both;
+        }
+
+        .interaction-area:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .interaction-text {
+            font-size: 0.9rem;
+            color: #999;
+            text-align: center;
+        }
+
+        .progress-section {
+            margin-bottom: 40px;
+            animation: fadeInUp 1.5s ease-out 0.6s both;
+        }
+
+        .progress-text {
+            font-size: 0.9rem;
+            color: #5a8c62;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            width: 200px;
+            height: 6px;
+            background: #e0e8e0;
+            border-radius: 3px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 0%;
+            height: 100%;
+            background: #2c5530;
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .interaction-area {
+                width: 250px;
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='30' viewBox='0 0 80 30'%3E%3Ctext x='0' y='20' font-family='Arial' font-size='20' font-weight='bold' fill='%232c5530'%3E超能%3C/text%3E%3C/svg%3E" alt="超能">
+        </div>
+        
+        <div class="title-section">
+            <h1>摩擦生香专利</h1>
+            <p class="subtitle">手动摩擦衬衫，释放香氛胶囊</p>
+        </div>
+        
+        <div class="interaction-area" onclick="increaseProgress()">
+            <div class="interaction-text">首次达林林卡图标的</div>
+        </div>
+        
+        <div class="progress-section">
+            <p class="progress-text">香氛激发：<span id="progress-value">0%</span></p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        挑战一下 马上puma
+    </div>
+
+    <script>
+        // 页面加载动画
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        // 进度条相关变量
+        let progress = 0;
+        const maxProgress = 100;
+        const progressFill = document.getElementById('progress-fill');
+        const progressValue = document.getElementById('progress-value');
+
+        // 增加进度的函数
+        function increaseProgress() {
+            // 每次点击增加25%的进度
+            progress = Math.min(progress + 25, maxProgress);
+            updateProgress();
+            
+            // 当进度达到100%时，可以添加完成逻辑
+            if (progress === maxProgress) {
+                setTimeout(() => {
+                    alert('香氛胶囊已完全释放！');
+                }, 500);
+            }
+        }
+
+        // 更新进度条显示
+        function updateProgress() {
+            progressFill.style.width = progress + '%';
+            progressValue.textContent = progress + '%';
+        }
+    </script>
+</body>
+</html>
